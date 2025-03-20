@@ -56,4 +56,29 @@ public class DbService(ApiContext db)
             .Where(student => student.StudentAddress.ToLower().Contains(s.ToLower()))
             .ToList();
     }
+
+    public List<Instructor> GetAllInstructors()
+    {
+        return db.Instructors.ToList();
+    }
+
+    public List<Section> GetAllSections()
+    {
+        return db.Sections.ToList();
+    }
+
+    public List<Clazz> GetFilteredClazzes(int? courseNumber, int? sectionNumber)
+    {
+        var query = db.Clazzes
+            .Include(clazz => clazz.Course).AsQueryable();
+        if (courseNumber != null)
+        {
+            query = query.Where(clazz => clazz.Course.CourseNumber == courseNumber);
+        }
+        if (sectionNumber != null)
+        {
+            query = query.Where(clazz => clazz.Section.SectionId == sectionNumber);
+        }
+        return query.ToList();
+    }
 }
