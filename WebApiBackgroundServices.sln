@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiBackgroundServices", "WebApiBackgroundServices\WebApiBackgroundServices.csproj", "{5FF468E2-FAC5-4F07-8D4B-52D6B8CA9B1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiBackgroundServicesDbLib", "WebApiBackgroundServicesDbLib\WebApiBackgroundServicesDbLib.csproj", "{17059BEB-5DC7-44EE-8849-9ABA1E2251F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{5FF468E2-FAC5-4F07-8D4B-52D6B8CA9B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FF468E2-FAC5-4F07-8D4B-52D6B8CA9B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FF468E2-FAC5-4F07-8D4B-52D6B8CA9B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17059BEB-5DC7-44EE-8849-9ABA1E2251F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17059BEB-5DC7-44EE-8849-9ABA1E2251F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17059BEB-5DC7-44EE-8849-9ABA1E2251F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17059BEB-5DC7-44EE-8849-9ABA1E2251F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
